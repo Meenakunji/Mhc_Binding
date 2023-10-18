@@ -67,6 +67,7 @@ function Temp() {
 
     try {
       const response = await fetch(
+        
         "https://app.prepaire.com:5067/mhcapi/api/analyze_proteins",
         {
           method: "POST",
