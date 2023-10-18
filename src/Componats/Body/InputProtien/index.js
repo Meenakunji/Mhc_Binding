@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css'; // You can create a CSS file for styling
 
-const CardProtien = () => {
+const CardProtien = ({onClickHandler}) => {
   const [proteinId, setProteinId] = useState('');
   const [selectedOption, setSelectedOption] = useState('Option 1'); // Initial dropdown value
 
@@ -17,14 +17,18 @@ const CardProtien = () => {
     <div className="card">
       <h2>Input Protien Structure</h2>
       <div className="input-field">
-        <label htmlFor="proteinId">Protein ID</label>
-        <input
+        <label htmlFor="dropdown">Protein ID</label>
+        <select
           type="text"
           id="proteinId"
           value={proteinId}
           placeholder='Insert ProtienId here'
           onChange={handleProteinIdChange}
-        />
+        >
+        <option value="option 1">4V0R, 4V0Q, 5JJR</option>
+          {/* <option value="Option 2">Option 2</option>
+          <option value="Option 3">Option 3</option> */}
+          </select>
       </div>
       <div className="input-field">
         <label htmlFor="dropdown" className= 'input_pro'>Alleles</label>
@@ -35,12 +39,13 @@ const CardProtien = () => {
           onChange={handleDropdownChange}
           style={{ width: '97%' }}
         >
-          <option value="option 1">Option 1</option>
-          <option value="Option 2">Option 2</option>
-          <option value="Option 3">Option 3</option>
+          <option value="option 1">
+A*02:01, hla-a0101</option>
+          {/* <option value="Option 2">Option 2</option>
+          <option value="Option 3">Option 3</option> */}
         </select>
       </div>
-      <button class="blue-button">Start The Analysis</button>
+      <button class="blue-button" onClick={onClickHandler}>Start The Analysis</button>
     </div>
   );
 };

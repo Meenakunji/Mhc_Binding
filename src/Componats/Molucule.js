@@ -1,8 +1,8 @@
 /* global $3Dmol */
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef,forwardRef, useImperativeHandle } from "react";
 import './Molucule.css';
 
-function MolculeView() {
+const MolculeView = forwardRef((props, ref) => {
   const [proteins, setProteins] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -55,7 +55,7 @@ function MolculeView() {
 
     return (
       <div
-        style={{ position: "relative", width: "800px", height: "400px" }}
+        style={{ position: "relative", width: "437px", height: "313px" }}
         ref={viewerRef}
       />
     );
@@ -75,7 +75,7 @@ function MolculeView() {
           },
           body: JSON.stringify({
             alleles: ["A*02:01", "hla-a0101"],
-            protein_ids: ["4V0R", "4V0Q", "5JJR"],
+            protein_ids: ["4V0Q", "5JJR"],
           }),
         }
       );
@@ -95,6 +95,10 @@ function MolculeView() {
     }
   };
 
+  useImperativeHandle(ref, () => ({
+    fetchData,
+   }));
+
   return (
     <div className="Tul">
       <header className="Tul-header">
@@ -102,22 +106,22 @@ function MolculeView() {
         {loading ? (
           <p>Loading...</p>
         ) : (
-          <button onClick={fetchData} disabled={loading}>
-            Fetch Data
-          </button>
+         <div></div>
         )}
         {/* Iterate over the proteins array and display the data */}
         {proteins.length > 0 && (
           <div className="d-flex">
             {proteins.map((protein) => (
-              <div key={protein.pdb_id} style={{ display: "flex" }}>
-                <div style={{ border: "1px solid #000" }}>
+              <div key={protein.pdb_id} style={{ display: "flex" }} className="three-d-box">
+                <div  className="card-3d">
+                  <h3>Original Protien 3D Structure</h3>
                   <ProteinViewer
                     pdbId={protein.pdb_id}
                     // peptides={null}
                   />
                 </div>
-                <div style={{ border: "1px solid #000" }}>
+                <div className="card-Protien">
+                  <h3>Protein Structure with Peptides highlight</h3>
                   <ProteinViewer
                     pdbId={protein.pdb_id}
                     peptides={protein.peptides}
@@ -130,6 +134,6 @@ function MolculeView() {
       </header>
     </div>
   );
-}
+});
 
 export default MolculeView;

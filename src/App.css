@@ -10,7 +10,7 @@
 }
 .body_box{
   display: flex;
-  /* justify-content: space-between; */
+
   align-items: center ;
   width: 1440px;
   margin-bottom: 20px;
@@ -18,9 +18,12 @@
 }
 .three_d_structure{
   display: flex;
-  /* justify-content: space-between; */
+
   align-items: center;
   margin-left: 35px;
+}
+.card_box_x{
+  margin-bottom: 10px;
 }
 .body{
   display: flex;

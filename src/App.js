@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import React, { useRef } from 'react';
 import './App.css';
 import Header from './Componats/Header';
 import CardProtien from './Componats/Body/InputProtien';
@@ -14,34 +15,55 @@ import Temp from './Componats/Temp';
 import MolculeView from './Componats/Molucule';
 
 function App() {
+
+  const childRef = useRef();
+  const onClickHandler = () => {
+    // console.log(childRef);
+    childRef.current.fetchData();
+   
+};
+
   return (
      <div className='Conatiner'>
       {/* <Header/> */}
      <div className='body'>
       <h3>Binding Analaysis Tool</h3>
       <div className='body_box'>
-        <CardProtien/>
-        <ProcessingComponent/>
+        <div className='body_box_left'>
+        <div className='card_box_x'><CardProtien onClickHandler = {onClickHandler}/></div>
+       <div className='card_box_x' > <ResultCard /></div>
+      <div className='card_box_x'>  <FaqCard/> </div>
+        </div>
+        <div className='body_box_right'>
+        <MolculeView ref={childRef}/>
+        </div>
+       
+        {/* <ProcessingComponent/> */}
       </div>
       <div className='body_box'>
-       <ResultCard />
-       <MolculeView/>
+       {/* <ResultCard /> */}
+       {/* <MolculeView/> */}
         
       </div>
       <div className='body_box'>
-        <FaqCard/>
+        {/* <FaqCard/> */}
        <div className='three_d_structure'>
-         <Card3D/>
-         <CardProtienStruct/>
+         {/* <Card3D/>
+         <CardProtienStruct/> */}
+         {/* <MolculeView/> */}
        </div>
      </div>
+{/* <div className='body_box'>
+<MolculeView/>
+</div> */}
+    
      
      </div>
      <div className='footer'>
      <LeftFooterCard/>
      <RightFooterCard/>
      </div>
-     <Temp/>
+     {/* <Temp/> */}
   </div>
   );
 }
