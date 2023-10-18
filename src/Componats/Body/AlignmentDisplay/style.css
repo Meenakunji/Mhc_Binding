@@ -1,0 +1,39 @@
+/* alignment.css */
+.Alignment_box{
+  margin-left: 35px;
+  height: 275px; 
+  width: 961px;
+    border-radius: 10px;
+height: 300px;
+flex-shrink: 0;
+background: #FFF;
+padding: 20px;
+box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
+}
+.alignment {
+   padding: 15px;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .alignment-column {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .alignment-column h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .alignment-column p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .Alignment_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  

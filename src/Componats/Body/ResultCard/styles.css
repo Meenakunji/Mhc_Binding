@@ -1,0 +1,72 @@
+/* ResultCard.css */
+.result-card {
+  border-radius: 10px;
+  border: 3px solid #50D8C8;
+  opacity: 0.2;
+  background: #FDFCFC;
+  flex-shrink: 0;
+  padding: 15px;
+  width: 374px;
+height: 299px;
+flex-shrink: 0;
+  }
+  
+  .result-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .header-left {
+    flex: 1;
+    color: #414D55;
+font-family: Rubik;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 111.111% */
+letter-spacing: 0.1px;
+  }
+  
+  .header-right {
+    padding-left: 10px;
+  }
+  
+  .result-card-content {
+    font-size: 16px;
+    margin: 10px 0;
+  
+  }
+  .break_line{
+    stroke-width: 2px;
+    stroke: #D9F6F2;
+  }
+  
+  .break_line{
+    border: none;
+    border-top: 2px solid #D9F6F2;
+    margin: 10px 0;
+    stroke-width: 2px;
+/* stroke: #D9F6F2; */
+  }
+  .seq_style{
+    color: #414D55;
+text-align: justify;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+  }
+  .seq2_style{
+ 
+/* text-align: justify; */
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+text-transform: uppercase;
+  }

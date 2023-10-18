@@ -1,0 +1,41 @@
+.right-footer-card {
+    display: flex;
+    /* border: 1px solid #ddd; */
+    margin: 10px;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
+    margin: 10px;
+    width: 704px;
+    height: 104px;
+    flex-shrink: 0;
+    margin-left: 15px;
+
+  }
+  
+  .left-side {
+    flex: 2;
+    padding: 10px;
+    /* background-color: #f1f1f1; */
+  }
+  
+  .right-side_box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .blue-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .blue-button:hover {
+    background-color: #0056b3;
+  }
+  

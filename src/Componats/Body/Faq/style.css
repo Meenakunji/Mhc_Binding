@@ -1,0 +1,28 @@
+/* FaqCard.css */
+.faq-card {
+    /* border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    width: 374px;
+height: 499px;
+flex-shrink: 0;
+    border-radius: 10px;
+    /* width: 321px;
+    height: 360px; */
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
+  }
+  
+  .faq-row {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .faq-divider {
+    border: none;
+    border-top: 1px dashed #ccc;
+    margin: 10px 0;
+  }
+  

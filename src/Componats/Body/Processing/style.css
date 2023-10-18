@@ -1,0 +1,27 @@
+/* ProcessingComponent.css */
+.processing-component {
+   
+  /* width: 58%; */
+height: 275px; 
+width: 961px;
+/* height: 352px; */
+flex-shrink: 0;
+flex-shrink: 0;
+padding: 18px;
+border-radius: 10px;
+background: #FFF;
+margin-left: 35px;
+box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
+  }
+  
+  .loader {
+    text-align: center;
+    font-size: 18px;
+    color: #007bff; /* Blue color, you can change it */
+  }
+  
+  .data-field {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,32 @@
+.left-footer-card {
+    display: flex;
+    /* border: 1px solid #ddd; */
+    margin: 10px;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
+    width: 712px;
+    height: 104px;
+    flex-shrink: 0;
+    align-items: center;
+  }
+  
+  .left-side_box {
+    flex: 1;
+    padding: 10px;
+    /* background-color: #f1f1f1; */
+  }
+  
+  .right-side {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+  
