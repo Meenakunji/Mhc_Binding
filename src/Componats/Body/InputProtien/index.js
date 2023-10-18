@@ -24,6 +24,7 @@ const CardProtien = ({onClickHandler}) => {
           value={proteinId}
           placeholder='Insert ProtienId here'
           onChange={handleProteinIdChange}
+          style={{ width: '97%' }}
         >
         <option value="option 1">4V0R, 4V0Q, 5JJR</option>
           {/* <option value="Option 2">Option 2</option>

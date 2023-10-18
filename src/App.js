@@ -29,10 +29,10 @@ function App() {
      <div className='body'>
       <h3>Binding Analaysis Tool</h3>
       <div className='body_box'>
-        <div className='body_box_left'>
-        <div className='card_box_x'><CardProtien onClickHandler = {onClickHandler}/></div>
-       <div className='card_box_x' > <ResultCard /></div>
-      <div className='card_box_x'>  <FaqCard/> </div>
+         <div className='body_box_left'>
+         <div className='card_box_x'><CardProtien onClickHandler = {onClickHandler}/></div>
+         <div className='card_box_x' > <ResultCard /></div>
+         <div className='card_box_x'>  <FaqCard/> </div>
         </div>
         <div className='body_box_right'>
         <MolculeView ref={childRef}/>
@@ -40,30 +40,12 @@ function App() {
        
         {/* <ProcessingComponent/> */}
       </div>
-      <div className='body_box'>
-       {/* <ResultCard /> */}
-       {/* <MolculeView/> */}
-        
-      </div>
-      <div className='body_box'>
-        {/* <FaqCard/> */}
-       <div className='three_d_structure'>
-         {/* <Card3D/>
-         <CardProtienStruct/> */}
-         {/* <MolculeView/> */}
-       </div>
-     </div>
-{/* <div className='body_box'>
-<MolculeView/>
-</div> */}
-    
-     
-     </div>
+   </div>
      <div className='footer'>
      <LeftFooterCard/>
      <RightFooterCard/>
      </div>
-     {/* <Temp/> */}
+     
   </div>
   );
 }
