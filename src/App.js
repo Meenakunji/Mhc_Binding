@@ -10,6 +10,8 @@ import Card3D from './Componats/Body/ThreeDStruct';
 import CardProtienStruct from './Componats/Body/ProtienStruct';
 import LeftFooterCard from './Componats/Footer/Leftfooter';
 import RightFooterCard from './Componats/Footer/RightFooter';
+import Temp from './Componats/Temp';
+import MolculeView from './Componats/Molucule';
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
       </div>
       <div className='body_box'>
        <ResultCard />
-       <Alignment/>
+       <MolculeView/>
         
       </div>
       <div className='body_box'>
@@ -39,6 +41,7 @@ function App() {
      <LeftFooterCard/>
      <RightFooterCard/>
      </div>
+     <Temp/>
   </div>
   );
 }

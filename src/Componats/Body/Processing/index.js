@@ -31,6 +31,7 @@ const ProcessingComponent = () => {
     <div className="processing-component">
       {isLoading ? (
         <div className="loader">Processing...</div>
+        // <Loader />
       ) : (
         <div>
           <div className="data-field">Field 1: {data.field1}</div>
