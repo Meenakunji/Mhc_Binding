@@ -29,13 +29,13 @@ function App() {
      <div className='body'>
       <h3>Binding Analaysis Tool</h3>
       <div className='body_box'>
-         <div className='body_box_left'>
-         <div className='card_box_x'><CardProtien onClickHandler = {onClickHandler}/></div>
-         <div className='card_box_x' > <ResultCard /></div>
-         <div className='card_box_x'>  <FaqCard/> </div>
+        <div className='body_box_left'>
+          <div className='card_box_x'><CardProtien onClickHandler = {onClickHandler}/></div>
+          <div className='card_box_x' > <ResultCard /></div>
+          <div className='card_box_x'>  <FaqCard/> </div>
         </div>
         <div className='body_box_right'>
-        <MolculeView ref={childRef}/>
+          <MolculeView ref={childRef}/>
         </div>
        
         {/* <ProcessingComponent/> */}

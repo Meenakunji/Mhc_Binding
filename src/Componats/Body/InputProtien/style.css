@@ -1,34 +1,25 @@
 /* Card.css */
-.card {
-  border-radius: 10px;
-  background: #FFF;
-  box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
-  width: 374px;
-height: 281px;
-flex-shrink: 0;
-padding: 15px;
+  .card {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
+    width: 374px;
+    height: 352px;
+    /* height: fit-content; */
+    flex-shrink: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
-  
   h2 {
-    /* font-size: 14px;
-    margin-bottom: 10px;
     color: #414D55;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; */
-color: #414D55;
-font-family: Rubik;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 111.111% */
-letter-spacing: 0.1px;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 0.1px;
   }
   
   .input-field {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   
   label {
@@ -45,11 +36,9 @@ letter-spacing: 0.1px;
     border-radius: 4px;
     font-size: 14px;
   }
-  .blue-button{
-
-background: #5498EE;
-box-shadow: 0px 1px 8px 0px rgba(38, 98, 240, 0.40);
-  
+  .analysis-button{
+    background: #5498EE;
+    box-shadow: 0px 1px 8px 0px rgba(38, 98, 240, 0.40);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -61,11 +50,11 @@ box-shadow: 0px 1px 8px 0px rgba(38, 98, 240, 0.40);
   }
   .input_pro{
     color: #414D55;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; 
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
   }
   
   /* You can add more styling to customize the card's appearance as needed */

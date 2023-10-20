@@ -11,7 +11,7 @@ const FaqCard = () => {
   const [row6, setRow6] = useState(false);
   return (
     <div className="faq-card">
-      <h4>FAQ</h4>
+      <h4 className='faq-heading'>FAQ</h4>
       <div className="faq-row">
         <p onClick={()=>setRow1(!row1)}>What is the first question?</p>
         { row1?<p>This is the answer to the first question.</p> : null}

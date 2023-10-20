@@ -34,12 +34,12 @@
 }
 .body h3{
   color: #414D55;
-font-family: Rubik;
-margin-left: 40px;
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: 40px; /* 142.857% */
+  font-family: Rubik;
+  margin-left: 40px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 142.857% */
 }
 .footer{
   display: flex;

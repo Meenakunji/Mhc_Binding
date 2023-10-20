@@ -41,12 +41,14 @@ const CardProtien = ({onClickHandler}) => {
           style={{ width: '97%' }}
         >
           <option value="option 1">
-A*02:01, hla-a0101</option>
+            A*02:01, hla-a0101</option>
           {/* <option value="Option 2">Option 2</option>
           <option value="Option 3">Option 3</option> */}
         </select>
       </div>
-      <button class="blue-button" onClick={onClickHandler}>Start The Analysis</button>
+      <div>
+        <button class="analysis-button" onClick={onClickHandler}>Start The Analysis</button>
+      </div>
     </div>
   );
 };
