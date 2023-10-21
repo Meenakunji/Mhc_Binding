@@ -7,6 +7,9 @@
     padding: 20px;
     box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
   }
+  .faq-card h4{
+    margin: 0;
+  }
   .faq-heading{
     margin-bottom: 36px;
   }
@@ -15,6 +18,11 @@
     cursor: pointer;
     /* font-family: Roboto; */
     color: #414D55;
+  }
+  .faq-row p{
+    margin: 0;
+    font-weight: 530;
+    font-size: 16px;
   }
   
   .faq-divider {

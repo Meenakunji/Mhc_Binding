@@ -13,8 +13,16 @@ box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
   
   .left-side_box {
     flex: 1;
-    padding: 10px;
+    padding: 20px;
     /* background-color: #f1f1f1; */
+  }
+  .left-side_box p{
+    color: #0F0F0F;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 550;
+line-height: 24px; 
   }
   
   .right-side {

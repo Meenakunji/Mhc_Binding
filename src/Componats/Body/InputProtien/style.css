@@ -1,28 +1,70 @@
-/* Card.css */
+
   .card {
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
-    width: 374px;
-    height: 352px;
-    /* height: fit-content; */
+    width: 364px;
     flex-shrink: 0;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  h2 {
-    color: #414D55;
-    line-height: 20px; /* 111.111% */
-    letter-spacing: 0.1px;
+  .custom-select{
+    background: transparent;
+    background-image: none;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  
   }
+  .custom-select option {
+    background-color: white;
+
+    color: #414D55;
+  }
+  .card p{
+    color: #414D55;
+    font-family: Rubik;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .option_class{
+    margin: 10px;
+    color: #414D55;
+  }
+
+  
   
   .input-field {
     margin-bottom: 20px;
   }
+#dropdown::before {
+    content: "Choose an option"; 
+    color: #888; 
+}
+
+.alles{
+  display: flex;
+  align-items: center;
+}
+
+.alles img{
+  width: 24px;
+  height: 20px;
+}
+
   
-  label {
+  .input-field label {
     display: block;
     font-size: 14px;
     margin-bottom: 5px;
@@ -30,7 +72,7 @@
   
   input,
   select {
-    width: 91%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;

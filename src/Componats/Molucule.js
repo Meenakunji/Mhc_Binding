@@ -115,6 +115,7 @@ const MolculeView = forwardRef((props, ref) => {
               <div key={protein.pdb_id} style={{ display: "flex" }} className="three-d-box">
                 <div  className="card-3d">
                   <h3>Original Protien 3D Structure</h3>
+                  <p>{protein.pdb_id}</p>
                   <ProteinViewer
                     pdbId={protein.pdb_id}
                     // peptides={null}
@@ -122,6 +123,7 @@ const MolculeView = forwardRef((props, ref) => {
                 </div>
                 <div className="card-Protien">
                   <h3>Protein Structure with Peptides highlight</h3>
+                  <p>{protein.pdb_id}</p>
                   <ProteinViewer
                     pdbId={protein.pdb_id}
                     peptides={protein.peptides}

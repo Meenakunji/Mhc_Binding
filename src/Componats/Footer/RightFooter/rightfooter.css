@@ -7,16 +7,31 @@
     box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
     margin: 10px;
     width: 704px;
-    height: 104px;
+    height: 72px;
     flex-shrink: 0;
     margin-left: 15px;
+    padding: 20px;
 
   }
   
-  .left-side {
+  .right-footer-card .left-side {
     flex: 2;
     padding: 10px;
     /* background-color: #f1f1f1; */
+  }
+
+  .blue-button .export_img{
+    display: flex;
+    align-items: center;
+  }
+
+  .right-footer-card .left-side h2{
+    color: #0F0F0F;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 24px;
   }
   
   .right-side_box {
@@ -27,12 +42,16 @@
   }
   
   .blue-button {
-    background-color: #007bff;
+     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 9px 63px;
+    border-radius: 69px;
     cursor: pointer;
+    
+  
+
+
   }
   
   .blue-button:hover {

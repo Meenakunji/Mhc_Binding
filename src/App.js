@@ -27,7 +27,7 @@ function App() {
      <div className='Conatiner'>
       {/* <Header/> */}
      <div className='body'>
-      <h3>Binding Analaysis Tool</h3>
+      <p>Binding Analaysis Tool</p>
       <div className='body_box'>
         <div className='body_box_left'>
           <div className='card_box_x'><CardProtien onClickHandler = {onClickHandler}/></div>

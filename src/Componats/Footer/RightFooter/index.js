@@ -1,6 +1,6 @@
 import React from 'react';
-
 import './rightfooter.css';
+import EXPORT from './Icon.png';
 
 class RightFooterCard extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class RightFooterCard extends React.Component {
           <p>format: like CSV, FASTA,etc.</p>
         </div>
         <div className="right-side_box">
-          <button className="blue-button">Export Now</button>
+          <button className="blue-button"><div className='export_img'> <img src={EXPORT} alt='export'/> Export Now</div></button>
         </div>
       </div>
     );

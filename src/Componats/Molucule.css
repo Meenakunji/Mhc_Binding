@@ -12,8 +12,8 @@
     cursor: pointer;
     background: #fff;
     padding: 20px;
-    width: 445px;
-    height: 470px;
+    /* width: 445px;
+    height: 470px; */
     flex-shrink: 0;
     /* height: 606px; */
 }
@@ -25,15 +25,15 @@
     background: #fff;
     padding: 20px;
     margin-left: 27px;
-    width: 440px;
-    height: 470px;
+    /* width: 440px;
+    height: 470px; */
     flex-shrink: 0;
     /* height: 606px; */
 }
 .three-d-box{
     margin-bottom: 10px;
-    height: 650px;
+    /* height: 650px; */
 }
-.d-flex{
+/* .d-flex{
     height: 1180px;
-}
+} */
