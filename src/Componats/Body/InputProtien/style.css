@@ -16,6 +16,10 @@
     padding: 10px; 
     border: 1px solid #ccc; 
     border-radius: 5px; 
+
+    /* border-radius: 5px;
+border: 1px solid #DFE2E4;
+background: #FFF; */
   
   }
   .custom-select option {
@@ -48,10 +52,10 @@
   .input-field {
     margin-bottom: 20px;
   }
-#dropdown::before {
+/* #dropdown::before {
     content: "Choose an option"; 
     color: #888; 
-}
+} */
 
 .alles{
   display: flex;
@@ -61,6 +65,15 @@
 .alles img{
   width: 24px;
   height: 20px;
+}
+
+.input-first label{
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.input-first{
+  margin-bottom: 20px;
 }
 
   
@@ -74,9 +87,13 @@
   select {
     width: 95%;
     padding: 10px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 4px;
     font-size: 14px;
+
+    border-radius: 5px;
+border: 1px solid #DFE2E4;
+background: #FFF;
   }
   .analysis-button{
     background: #5498EE;
@@ -97,6 +114,51 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px; 
+  }
+
+ 
+
+  .input-field {
+    min-width: 350px;
+    position: relative;
+  }
+  
+  select {
+    appearance: none;
+    /*  safari  */
+    -webkit-appearance: none;
+    /*  other styles for aesthetics */
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid #DFE2E4;
+    border-radius: 0.25rem;
+    color: #9B9C9C;
+    cursor: pointer;
+  }
+  
+  .input-field::before,
+  .input-field::after {
+    --size: 0.4rem;
+    content: "";
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+  }
+  
+  /* .custom-select::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid black;
+    top: 40%;
+  } */
+  
+  .input-field::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid #6B6B6B;
+    top: 70%;
   }
   
   /* You can add more styling to customize the card's appearance as needed */

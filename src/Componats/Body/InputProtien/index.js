@@ -17,15 +17,15 @@ const CardProtien = ({onClickHandler}) => {
   return (
     <div className="card">
       <p>Input Protien Structure</p>
-      <div className="input-field">
-        <label htmlFor="dropdown"  className= 'input_pro'>Protein IDs</label>
+      <div className="input-first">
+        <label className= 'input_pro'>Protein IDs</label>
         <input
           type="text"
           id="proteinId"
           value={proteinId}
           placeholder='Insert Protien ID here'
           onChange={handleProteinIdChange}
-          style={{ width: '94%' }}
+          style={{ width: '94%', color:'#9B9C9C' }}
         />
         {/* <option value="option 1">4V0R, 4V0Q, 5JJR</option> */}
           {/* <option value="Option 2">Option 2</option>
@@ -33,24 +33,30 @@ const CardProtien = ({onClickHandler}) => {
           {/* </select> */}
       </div>
       <div className="input-field">
-        <label htmlFor="dropdown" className= 'input_pro'> <div className='alles' >Alleles <img src={IMG} alt='icon-info'/> </div></label>
-        <input
-          id="dropdown"
+        <label  className= 'input_pro'> <div className='alles' >Alleles
+         <img src={IMG} alt='icon-info'/> 
+         {/* <div style={{width: '100%', height: '100%', position: 'relative'}}>
+    <div style={{width: 16, height: 16, left: 0, top: 1, position: 'absolute', background: 'white', borderRadius: 9999, border: '1px #AAAAAA solid'}} />
+    <div style={{width: 15, height: 18, left: 6, top: 0, position: 'absolute', color: '#9B9C9C', fontSize: 11, fontFamily: 'Rockwell', fontWeight: '400', lineHeight: 22, wordWrap: 'break-word'}}>i</div>
+</div> */}
+         </div></label>
+        {/* <div className="custom-select"> */}
+        <select
+          // id="dropdown"
           value={selectedOption}
           placeholder='Choose your alleles'
           onChange={handleDropdownChange}
-          style={{ width: '94%' }}
-          className="custom-select"
+          style={{ width: '100%' }}
+          
         >
-
-          </input>
-           {/* <option className='option_class' value="" >Choose your alleles</option>
-          <option value="option 1" selected>
-            A*02:01, hla-a0101</option> */}
+         <option className='option_class' value="" >Choose your alleles</option>
+          <option value="option 1">
+            A*02:01, hla-a0101</option>
   
-        {/* </select> */}
+        </select>
+        {/* </div> */}
       </div>
-      <div>
+      <div style={{marginBottom:"20"}}>
         <button class="analysis-button" onClick={onClickHandler}>Start The Analysis</button>
       </div>
     </div>
