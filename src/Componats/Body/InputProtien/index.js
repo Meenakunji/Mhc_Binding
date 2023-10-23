@@ -26,7 +26,8 @@ const CardProtien = ({onClickHandler}) => {
 
   return (
     <div className="card">
-      <p>Input Protien Structure</p>
+      <p>Input Protien IDs and Alleles
+</p>
       <div className="input-first">
         <label className= 'input_pro'>Protein IDs</label>
         <input
@@ -63,6 +64,12 @@ const CardProtien = ({onClickHandler}) => {
          <option className='option_class' value="" >Choose your alleles</option>
           <option value="option 1">
             A*02:01, hla-a0101</option>
+            <option value="option 1">
+            HLA-A*02:01</option>
+            <option value="option 1">
+            HLA-A*01:01</option>
+            <option value="option 1">
+            A*02:01, hla-a0102</option>
   
         </select>
         {/* </div> */}

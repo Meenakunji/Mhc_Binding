@@ -25,7 +25,7 @@ const ResultCard = ({ content }) => {
         {/* <hr className="faq-divider" /> */}
         <hr className="break_line" />
         <div className="result-card-content">
-          <div className="seq_style">Sequence Display</div>
+          <div className="seq_style"> Aligned Sequence Display</div>
           <div className="seq2_style">
             hsjk slwj klaksd pkm asd ksjjdaskda dnakdlaldadaskdjladmas.d askj
             dhgdjdj dnsjd jheuf djfheufg djfh DJHDJ  EJIK3E 3RJ3 dnijoe kedjiej dkdeokdpwd www
