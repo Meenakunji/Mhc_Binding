@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css'; // You can create a CSS file for styling
+import './style.css'; 
 
 const FaqCard = () => {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'; // You can create a CSS file for styling
+import './style.css'; 
 import myImage from './protein.png';
 const Card3D = () => {
   return (

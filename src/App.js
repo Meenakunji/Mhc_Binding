@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './App.css';
 import Header from './Componats/Header';
 import CardProtien from './Componats/Body/InputProtien';
@@ -13,32 +13,45 @@ import LeftFooterCard from './Componats/Footer/Leftfooter';
 import RightFooterCard from './Componats/Footer/RightFooter';
 import Temp from './Componats/Temp';
 import MolculeView from './Componats/Molucule';
-
+import DataContext from './Context/DataContext';
 function App() {
 
+  const [alignedSeq, setAlignedSeq] = useState("Sample Sequence");
+
+  const [alleles, setAlleles] = useState(null);
+  const [proteinIds, setProteinIds] = useState(null);
+
   const childRef = useRef();
-  const onClickHandler = () => {
-    // console.log(childRef);
-    childRef.current.fetchData();
-   
+  const onClickHandler = (protein_ids, alleles) => {
+    
+    childRef.current.fetchData(protein_ids, alleles);
+    handleAlignedSeq();
+};
+
+const handleAlignedSeq = (data) => {
+
+  setAlignedSeq(data);
+  // Now you have your alignedSeq data in your parent component, you can set it to the state or do anything else
 };
 
   return (
+    <DataContext.Provider value={{alleles , setAlleles, proteinIds , setProteinIds }}>
+      
      <div className='Conatiner'>
-      {/* <Header/> */}
+   
      <div className='body'>
       <p>Binding Analaysis Tool</p>
       <div className='body_box'>
         <div className='body_box_left'>
           <div className='card_box_x'><CardProtien onClickHandler = {onClickHandler}/></div>
-          <div className='card_box_x' > <ResultCard /></div>
+          <div className='card_box_x' > <ResultCard alignedSeq = {alignedSeq}  /></div>
           <div className='card_box_x'>  <FaqCard/> </div>
         </div>
         <div className='body_box_right'>
-          <MolculeView ref={childRef}/>
+          <MolculeView ref={childRef} onAlignedSeq={handleAlignedSeq}/>
         </div>
        
-        {/* <ProcessingComponent/> */}
+      
       </div>
    </div>
      <div className='footer'>
@@ -47,6 +60,7 @@ function App() {
      </div>
      
   </div>
+  </DataContext.Provider>
   );
 }
 

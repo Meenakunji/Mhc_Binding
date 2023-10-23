@@ -17,9 +17,7 @@
     border: 1px solid #ccc; 
     border-radius: 5px; 
 
-    /* border-radius: 5px;
-border: 1px solid #DFE2E4;
-background: #FFF; */
+ 
   
   }
   .custom-select option {
@@ -52,10 +50,6 @@ background: #FFF; */
   .input-field {
     margin-bottom: 20px;
   }
-/* #dropdown::before {
-    content: "Choose an option"; 
-    color: #888; 
-} */
 
 .alles{
   display: flex;
@@ -87,7 +81,7 @@ background: #FFF; */
   select {
     width: 95%;
     padding: 10px;
-    /* border: 1px solid #ccc; */
+
     border-radius: 4px;
     font-size: 14px;
 
@@ -147,12 +141,7 @@ background: #FFF;
     pointer-events: none;
   }
   
-  /* .custom-select::before {
-    border-left: var(--size) solid transparent;
-    border-right: var(--size) solid transparent;
-    border-bottom: var(--size) solid black;
-    top: 40%;
-  } */
+
   
   .input-field::after {
     border-left: var(--size) solid transparent;
@@ -164,5 +153,5 @@ background: #FFF;
     color: red;
   }
   
-  /* You can add more styling to customize the card's appearance as needed */
+
   

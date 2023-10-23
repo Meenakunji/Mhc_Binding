@@ -1,20 +1,19 @@
-/* ResultCard.css */
+
 .result-card {
   border-radius: 10px;
   background: #FFF;
   padding: 15px;
   width: 374px;
-  /* height: 299px; */
-  /* flex-shrink: 0; */
+
 }
 
 .container {
   border-radius: 10px;
   border: 3px solid rgba(80, 216, 200, 0.2);
-  /* background: #FDFCFC; */
+
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+ 
   height: 88%;
   padding: 16px;
   flex: 1;
@@ -33,7 +32,7 @@
   color: #414D55;
   font-weight: 500;
   line-height: 20px;
-  /* 111.111% */
+
   letter-spacing: 0.1px;
 }
 
@@ -53,7 +52,7 @@
   color: #414D55;
   font-weight: 700;
   line-height: 24px;
-  /* 150% */
+
 }
 
 .seq2_style {
@@ -61,14 +60,17 @@
   font-size: 12px;
   font-style: normal;
   line-height: 24px;
-  /* 150% */
+
   text-transform: uppercase;
   color: #414D55;
-  /* text-align: justify; */
-  /* font-family: Roboto; */
+
   font-size: 15px;
   font-style: normal;
   font-weight: 450;
   line-height: 20px;
-  /* 150% */
+  display: flex;
+
+}
+.seq2_alignSeq{
+  display: flex;
 }

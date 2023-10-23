@@ -1,6 +1,6 @@
 .left-footer-card {
     display: flex;
-    /* border: 1px solid #ddd; */
+   
     margin: 10px;
     border-radius: 8px;
 background: #FFF;
@@ -14,7 +14,7 @@ box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
   .left-side_box {
     flex: 1;
     padding: 20px;
-    /* background-color: #f1f1f1; */
+   
   }
   .left-side_box p{
     color: #0F0F0F;

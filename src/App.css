@@ -1,12 +1,9 @@
 .Conatiner{
-  /* background-color: #F1F5F8; */
+
   height: 100%;
   background: #F1F5F8;
   width: 100%;
-  /* overflow: hidden; */
-  /* overflow: hidden; */
-  /* min-width: fit-content; */
-  /* max-width: fit-content; */
+  
 }
 
 .body_box{
@@ -14,7 +11,7 @@
 
   align-items: center ;
   width: 1440px;
-  /* margin-bottom: 20px; */
+  
   margin-left: 40px;
 }
 .three_d_structure{
@@ -29,7 +26,7 @@
 .body{
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
+
   justify-content: space-between;
   width: 1440px;
 }
@@ -44,9 +41,9 @@
 }
 .footer{
   display: flex;
-  /* justify-content: space-between; */
+  
   align-items: center;
-  /* width: 1440px; */
+  
   margin-left: 30px;
 }
 .body_box_right{

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './style.css'; // You can create a CSS file for styling
+import './style.css'; 
 
 const ProcessingComponent = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,7 +13,7 @@ const ProcessingComponent = () => {
   });
 
   useEffect(() => {
-    // Simulate data loading (e.g., fetching from an API)
+   
     setTimeout(() => {
       setIsLoading(false);
       setData({

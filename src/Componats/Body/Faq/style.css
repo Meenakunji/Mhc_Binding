@@ -16,7 +16,7 @@
   .faq-row {
     margin: 10px 0;
     cursor: pointer;
-    /* font-family: Roboto; */
+    font-family: Roboto;
     color: #414D55;
   }
   .faq-row p{

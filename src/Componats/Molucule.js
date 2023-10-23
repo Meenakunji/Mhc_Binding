@@ -1,11 +1,18 @@
 /* global $3Dmol */
-import React, { useState, useEffect, useRef,forwardRef, useImperativeHandle } from "react";
+
+import React, { useState, useEffect, useRef,forwardRef, useImperativeHandle, useContext } from "react";
 import './Molucule.css';
 import Loading from "./Body/Loader/loader";
 
+import DataContext from "../Context/DataContext";
+
 const MolculeView = forwardRef((props, ref) => {
+
+
   const dummydata= [1, 2];
   const [proteins, setProteins] = useState(dummydata);
+
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [heading, setheading] = useState(false);
@@ -65,7 +72,7 @@ const MolculeView = forwardRef((props, ref) => {
     );
   };
 
-  const fetchData = async () => {
+  const fetchData = async (protein_ids, alleles) => {
     setLoading(true);
     setheading(true);
     setError("");
@@ -79,8 +86,10 @@ const MolculeView = forwardRef((props, ref) => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            alleles: ["A*02:01", "hla-a0101"],
-            protein_ids: ["4V0Q", "5JJR"],
+            // alleles: ["A*02:01", "hla-a0101"],
+            // protein_ids: ["4V0Q", "5JJR"],
+            alleles: alleles,
+            protein_ids: protein_ids,
           }),
         }
       );
@@ -88,10 +97,11 @@ const MolculeView = forwardRef((props, ref) => {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || "Something went wrong");
+        throw new Error("Something went wrong");
       }
-
-      setProteins(data); // Set the state with the fetched data
+    
+      setProteins(data.results); // Set the state with the fetched data
+      props.onAlignedSeq(data.aligned_seq);
     } catch (error) {
       console.error("Error fetching data: ", error);
       setError(error.toString());
@@ -101,7 +111,8 @@ const MolculeView = forwardRef((props, ref) => {
   };
 
   useImperativeHandle(ref, () => ({
-    fetchData,
+    fetchData, 
+   
    }));
 
   
@@ -109,7 +120,7 @@ const MolculeView = forwardRef((props, ref) => {
   return (
     <div className="Tul">
       <header className="Tul-header">
-        {error && <div style={{ color: "red" }}>{error}</div>}
+        {error && <div className="tul-header-error">Inavlid ProtienIds or Alleles</div>}
         
         
         {proteins.length > 0 && (
@@ -117,11 +128,11 @@ const MolculeView = forwardRef((props, ref) => {
             {proteins.map((protein) => (
               <div key={protein.pdb_id} style={{ display: "flex" }} className="three-d-box">
                 
-                {/* {loading? <span className="card-3d"><Loading/></span> : */}
+                
                 
                 <div  className="card-3d">
                  
-                  {/* <h3>Original Protien 3D Structure</h3> */}
+                 
 
                  {loading?<p className="loading"> <Loading/> </p>: 
                  <div>
@@ -129,7 +140,7 @@ const MolculeView = forwardRef((props, ref) => {
                   <p>{protein.pdb_id}</p>
                   <ProteinViewer
                     pdbId={protein.pdb_id}
-                    // peptides={null}
+                  
                   />
                  </div>
                 }
@@ -137,9 +148,9 @@ const MolculeView = forwardRef((props, ref) => {
                   
                  
                 </div>
-              {/* } */}
+             
                 <div className="card-Protien">
-                  {/* {loading? <h3>Protein Structure with Peptides highlight</h3> : <div/>} */}
+                  
                    {loading?<p className="loading"> <Loading/> </p>: 
                    <div>
                    {heading?<h3>Protein Structure with Peptides highlight</h3>: <div/>}

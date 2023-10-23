@@ -1,6 +1,6 @@
 .right-footer-card {
     display: flex;
-    /* border: 1px solid #ddd; */
+    
     margin: 10px;
     border-radius: 8px;
     background: #FFF;
@@ -26,8 +26,7 @@
   
   .right-footer-card .left-side {
     flex: 2;
-    /* padding: 10px; */
-    /* background-color: #f1f1f1; */
+   
   }
 
   .blue-button .export_img{
@@ -52,11 +51,11 @@
   }
   
   .blue-button {
-    /* background-color: #007bff; */
+   
     color: white;
     border: none;
     padding: 9px 44px;
-    /* border-radius: 69px; */
+   
     cursor: pointer;
 
     border-radius: 20px;
