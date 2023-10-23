@@ -8,6 +8,7 @@ const MolculeView = forwardRef((props, ref) => {
   const [proteins, setProteins] = useState(dummydata);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [heading, setheading] = useState(false);
    
   const TWO = 2;
   const ProteinViewer = ({ pdbId, peptides }) => {
@@ -66,6 +67,7 @@ const MolculeView = forwardRef((props, ref) => {
 
   const fetchData = async () => {
     setLoading(true);
+    setheading(true);
     setError("");
 
     try {
@@ -119,10 +121,11 @@ const MolculeView = forwardRef((props, ref) => {
                 
                 <div  className="card-3d">
                  
-                  <h3>Original Protien 3D Structure</h3>
+                  {/* <h3>Original Protien 3D Structure</h3> */}
 
                  {loading?<p className="loading"> <Loading/> </p>: 
                  <div>
+                 {heading? <h3>Original Protien 3D Structure</h3> : <div/>}
                   <p>{protein.pdb_id}</p>
                   <ProteinViewer
                     pdbId={protein.pdb_id}
@@ -136,9 +139,10 @@ const MolculeView = forwardRef((props, ref) => {
                 </div>
               {/* } */}
                 <div className="card-Protien">
-                   <h3>Protein Structure with Peptides highlight</h3>
+                  {/* {loading? <h3>Protein Structure with Peptides highlight</h3> : <div/>} */}
                    {loading?<p className="loading"> <Loading/> </p>: 
                    <div>
+                   {heading?<h3>Protein Structure with Peptides highlight</h3>: <div/>}
                   <p>{protein.pdb_id}</p>
                    <ProteinViewer
                     pdbId={protein.pdb_id}
