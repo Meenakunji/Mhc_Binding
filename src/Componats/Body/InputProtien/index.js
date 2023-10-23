@@ -5,13 +5,23 @@ import IMG from './info-icon.png';
 const CardProtien = ({onClickHandler}) => {
   const [proteinId, setProteinId] = useState('');
   const [selectedOption, setSelectedOption] = useState(''); // Initial dropdown value
+  const [inputError, setInputError] = useState(false);
 
   const handleProteinIdChange = (e) => {
     setProteinId(e.target.value);
+    setInputError(false);
   };
 
   const handleDropdownChange = (e) => {
     setSelectedOption(e.target.value);
+  };
+  const onClickStartAnalysis = () => {
+    if (proteinId.trim() === '') {
+      setInputError(true);
+    } else {
+      setInputError(false); // Reset the input error if the input is not empty
+      onClickHandler();
+    }
   };
 
   return (
@@ -32,6 +42,7 @@ const CardProtien = ({onClickHandler}) => {
           <option value="Option 3">Option 3</option> */}
           {/* </select> */}
       </div>
+      {inputError && <div className="error-message">Please enter a Protein ID.</div>}
       <div className="input-field">
         <label  className= 'input_pro'> <div className='alles' >Alleles
          <img src={IMG} alt='icon-info'/> 
@@ -57,7 +68,7 @@ const CardProtien = ({onClickHandler}) => {
         {/* </div> */}
       </div>
       <div style={{marginBottom:"20"}}>
-        <button class="analysis-button" onClick={onClickHandler}>Start The Analysis</button>
+        <button class="analysis-button" onClick={onClickStartAnalysis}>Start The Analysis</button>
       </div>
     </div>
   );

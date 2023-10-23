@@ -160,6 +160,9 @@ background: #FFF;
     border-top: var(--size) solid #6B6B6B;
     top: 70%;
   }
+  .error-message{
+    color: red;
+  }
   
   /* You can add more styling to customize the card's appearance as needed */
   

@@ -1,15 +1,18 @@
 /* global $3Dmol */
 import React, { useState, useEffect, useRef,forwardRef, useImperativeHandle } from "react";
 import './Molucule.css';
+import Loading from "./Body/Loader/loader";
 
 const MolculeView = forwardRef((props, ref) => {
-  const [proteins, setProteins] = useState([]);
+  const dummydata= [1, 2];
+  const [proteins, setProteins] = useState(dummydata);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
+   
+  const TWO = 2;
   const ProteinViewer = ({ pdbId, peptides }) => {
     const viewerRef = useRef(null); // Reference to the container for the viewer
-
+   
     useEffect(() => {
       // This function fetches the pdb data and initializes the viewer
       const fetchData = async () => {
@@ -99,40 +102,56 @@ const MolculeView = forwardRef((props, ref) => {
     fetchData,
    }));
 
+  
+
   return (
     <div className="Tul">
       <header className="Tul-header">
         {error && <div style={{ color: "red" }}>{error}</div>}
-        {loading ? (
-          <p>Loading...</p>
-        ) : (
-         <div></div>
-        )}
-        {/* Iterate over the proteins array and display the data */}
+        
+        
         {proteins.length > 0 && (
           <div className="d-flex">
             {proteins.map((protein) => (
               <div key={protein.pdb_id} style={{ display: "flex" }} className="three-d-box">
+                
+                {/* {loading? <span className="card-3d"><Loading/></span> : */}
+                
                 <div  className="card-3d">
+                 
                   <h3>Original Protien 3D Structure</h3>
+
+                 {loading?<p className="loading"> <Loading/> </p>: 
+                 <div>
                   <p>{protein.pdb_id}</p>
                   <ProteinViewer
                     pdbId={protein.pdb_id}
                     // peptides={null}
                   />
+                 </div>
+                }
+                
+                  
+                 
                 </div>
+              {/* } */}
                 <div className="card-Protien">
-                  <h3>Protein Structure with Peptides highlight</h3>
+                   <h3>Protein Structure with Peptides highlight</h3>
+                   {loading?<p className="loading"> <Loading/> </p>: 
+                   <div>
                   <p>{protein.pdb_id}</p>
-                  <ProteinViewer
+                   <ProteinViewer
                     pdbId={protein.pdb_id}
                     peptides={protein.peptides}
                   />
+                  </div>
+               }
                 </div>
               </div>
             ))}
           </div>
         )}
+      
       </header>
     </div>
   );
