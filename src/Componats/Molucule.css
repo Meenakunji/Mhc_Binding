@@ -22,6 +22,10 @@
    
  font-family: 'Inter';
 }
+
+.card-3d h3{
+    font-family: 'Inter';
+}
 .card-Protien {
     border-radius: 10px;
     
@@ -40,6 +44,9 @@
     justify-content: center;
     align-items: center;
  font-family: 'Inter';
+}
+.card-Protien h3{
+  font-family: 'Inter';
 }
 .tul-header-error{
     display: flex;
