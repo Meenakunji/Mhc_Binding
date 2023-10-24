@@ -9,7 +9,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  }
+   font-family: 'Inter';
+}
   .custom-select{
     background: transparent;
     background-image: none;
@@ -19,12 +20,14 @@
 
  
   
-  }
+   font-family: 'Inter';
+}
   .custom-select option {
     background-color: white;
 
     color: #414D55;
-  }
+   font-family: 'Inter';
+}
   .card p{
     color: #414D55;
     font-family: Rubik;
@@ -38,36 +41,43 @@
     margin-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 20px;
-  }
+   font-family: 'Inter';
+}
 
   .option_class{
     margin: 10px;
     color: #414D55;
-  }
+   font-family: 'Inter';
+}
 
   
   
   .input-field {
     margin-bottom: 20px;
-  }
+   font-family: 'Inter';
+}
 
 .alles{
   display: flex;
   align-items: center;
+ font-family: 'Inter';
 }
 
 .alles img{
   width: 24px;
   height: 20px;
+ font-family: 'Inter';
 }
 
 .input-first label{
   display: block;
   font-size: 14px;
   margin-bottom: 5px;
+ font-family: 'Inter';
 }
 .input-first{
   margin-bottom: 20px;
+ font-family: 'Inter';
 }
 
   
@@ -75,7 +85,8 @@
     display: block;
     font-size: 14px;
     margin-bottom: 5px;
-  }
+   font-family: 'Inter';
+}
   
   input,
   select {
@@ -88,7 +99,8 @@
     border-radius: 5px;
 border: 1px solid #DFE2E4;
 background: #FFF;
-  }
+   font-family: 'Inter';
+}
   .analysis-button{
     background: #5498EE;
     box-shadow: 0px 1px 8px 0px rgba(38, 98, 240, 0.40);
@@ -100,7 +112,14 @@ background: #FFF;
     margin-top: 10px;
     float: right;
     margin-right: 14px;
-  }
+   font-family: 'Inter';
+}
+  
+  button:hover{
+    /* color: #2F63A5; */
+    background-color: #2F63A5;
+   font-family: 'Inter';
+}
   .input_pro{
     color: #414D55;
     font-family: Roboto;
@@ -108,14 +127,16 @@ background: #FFF;
     font-style: normal;
     font-weight: 400;
     line-height: 22px; 
-  }
+   font-family: 'Inter';
+}
 
  
 
   .input-field {
     min-width: 350px;
     position: relative;
-  }
+   font-family: 'Inter';
+}
   
   select {
     appearance: none;
@@ -130,7 +151,8 @@ background: #FFF;
     border-radius: 0.25rem;
     color: #9B9C9C;
     cursor: pointer;
-  }
+   font-family: 'Inter';
+}
   
   .input-field::before,
   .input-field::after {
@@ -139,7 +161,8 @@ background: #FFF;
     position: absolute;
     right: 1rem;
     pointer-events: none;
-  }
+   font-family: 'Inter';
+}
   
 
   
@@ -148,10 +171,12 @@ background: #FFF;
     border-right: var(--size) solid transparent;
     border-top: var(--size) solid #6B6B6B;
     top: 70%;
-  }
+   font-family: 'Inter';
+}
   .error-message{
     color: red;
-  }
+   font-family: 'Inter';
+}
   
 
   

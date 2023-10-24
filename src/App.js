@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import React, { useRef, useState } from 'react';
 import './App.css';
+// import './font.css';
+// import './Fonts/Inter-3.19/Inter Hinted for Windows/Web/inter.css';
+import './Inter-3.19/Inter Hinted for Windows/Web/inter.css';
+
 import Header from './Componats/Header';
 import CardProtien from './Componats/Body/InputProtien';
 import ProcessingComponent from './Componats/Body/Processing';
@@ -40,7 +44,7 @@ const handleAlignedSeq = (data) => {
      <div className='Conatiner'>
    
      <div className='body'>
-      <p>Binding Analaysis Tool</p>
+      <p style={{ fontFamily: 'Inter' }}>Binding Analaysis Tool</p>
       <div className='body_box'>
         <div className='body_box_left'>
           <div className='card_box_x'><CardProtien onClickHandler = {onClickHandler}/></div>

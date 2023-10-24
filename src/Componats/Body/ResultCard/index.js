@@ -23,7 +23,7 @@ const ResultCard = ({ content, alignedSeq }) => {
           <div className="seq2_style" style={{ width: "300px" }}>
            {alignedSeq? <div  className="seq2_alignSeq" style={{ whiteSpace: "pre-wrap" }}> 
           
-           {alignedSeq.replace(/(.{35})/g, "$1\n")}
+           {alignedSeq.replace(/(.{32})/g, "$1\n")}
             </div> 
            : "Run the Application to see the Results"}
           </div>

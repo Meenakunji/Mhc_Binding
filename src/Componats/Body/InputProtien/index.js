@@ -94,7 +94,7 @@ const CardProtien = ({onClickHandler}) => {
           style={{ width: '100%' }}
           
         >
-         {/* <option className='option_class' value="" >Choose your alleles</option> */}
+          <option className='option_class' value="" >Choose your alleles</option>
           <option value= {["A*02:01", "hla-a0101"]}>
             A*02:01, hla-a0101</option>
             <option value={["A*02:01", "hla-a0201"]}>

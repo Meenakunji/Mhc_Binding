@@ -5,6 +5,7 @@
   padding: 15px;
   width: 374px;
 
+ font-family: 'Inter';
 }
 
 .container {
@@ -17,6 +18,7 @@
   height: 88%;
   padding: 16px;
   flex: 1;
+ font-family: 'Inter';
 }
 
 .result-card-header {
@@ -25,6 +27,7 @@
   align-items: center;
   font-size: 18px;
   font-weight: bold;
+ font-family: 'Inter';
 }
 
 .header-left {
@@ -34,11 +37,13 @@
   line-height: 20px;
 
   letter-spacing: 0.1px;
+ font-family: 'Inter';
 }
 
 .result-card-content {
   font-size: 16px;
   margin: 10px 0;
+ font-family: 'Inter';
 }
 
 .break_line {
@@ -46,6 +51,7 @@
   border-top: 2px dashed #D9F6F2;
   margin: 10px 0;
   stroke-width: 2px;
+ font-family: 'Inter';
 }
 
 .seq_style {
@@ -53,6 +59,7 @@
   font-weight: 700;
   line-height: 24px;
 
+ font-family: 'Inter';
 }
 
 .seq2_style {
@@ -70,7 +77,9 @@
   line-height: 20px;
   display: flex;
 
+ font-family: 'Inter';
 }
 .seq2_alignSeq{
   display: flex;
+ font-family: 'Inter';
 }

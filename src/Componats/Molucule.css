@@ -1,6 +1,7 @@
 
 .Tul{
     width: 900px;
+ font-family: 'Inter';
 }
 .card-3d {
     background: #f5f5f5;
@@ -19,6 +20,7 @@
     justify-content: center;
     align-items: center;
    
+ font-family: 'Inter';
 }
 .card-Protien {
     border-radius: 10px;
@@ -37,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+ font-family: 'Inter';
 }
 .tul-header-error{
     display: flex;
@@ -45,15 +48,18 @@
     justify-content: center;
     margin-bottom: 10px;
     font-size: 20px;
+ font-family: 'Inter';
 }
 
 .loading{
      display: flex;
     justify-content: center;
     align-items: center;
+ font-family: 'Inter';
 }
 
 .three-d-box{
     margin-bottom: 10px;
   
+ font-family: 'Inter';
 }

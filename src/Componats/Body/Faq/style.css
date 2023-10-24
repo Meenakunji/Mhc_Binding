@@ -6,28 +6,37 @@
     background: #FFF;
     padding: 20px;
     box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
-  }
+    font-family: 'Inter';
+   font-family: 'Inter';
+}
   .faq-card h4{
     margin: 0;
-  }
+    font-family: 'Inter';
+   font-family: 'Inter';
+}
   .faq-heading{
     margin-bottom: 36px;
-  }
+    font-family: 'Inter';
+   font-family: 'Inter'; 
+}
   .faq-row {
     margin: 10px 0;
     cursor: pointer;
-    font-family: Roboto;
+    
     color: #414D55;
-  }
+   font-family: 'Inter'; 
+}
   .faq-row p{
     margin: 0;
     font-weight: 530;
     font-size: 16px;
-  }
+   font-family: 'Inter';
+}
   
   .faq-divider {
     border: none;
     border-top: 1px dashed #ccc;
     margin: 10px 0;
-  }
+   font-family: 'Inter';
+}
   
