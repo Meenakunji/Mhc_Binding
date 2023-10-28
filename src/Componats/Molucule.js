@@ -17,7 +17,7 @@ const MolculeView = forwardRef((props, ref) => {
   const [error, setError] = useState("");
   const [heading, setheading] = useState(false);
    
-  const TWO = 2;
+
   const ProteinViewer = ({ pdbId, peptides }) => {
     const viewerRef = useRef(null); // Reference to the container for the viewer
    

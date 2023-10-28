@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'; // You can create a CSS file for styling
+import './style.css'; 
 
 const Alignment = ({ column1, column2, column3 }) => {
   return (

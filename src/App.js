@@ -29,12 +29,14 @@ function App() {
   const onClickHandler = (protein_ids, alleles) => {
     
     childRef.current.fetchData(protein_ids, alleles);
+    // console.log('kunj', protein_ids);
     handleAlignedSeq();
 };
 
 const handleAlignedSeq = (data) => {
 
   setAlignedSeq(data);
+  
   // Now you have your alignedSeq data in your parent component, you can set it to the state or do anything else
 };
 
