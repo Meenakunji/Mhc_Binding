@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  mhcbinding-frontend:
+    container_name: mhcbinding-frontend
+    build:
+      context: . 
+      dockerfile: Dockerfile 
+    volumes:
+      - './:/app' 
+      - '/app/node_modules' 
+    ports:
+      - '5052:80' 
+    environment:
+      - NODE_ENV=production 
+
