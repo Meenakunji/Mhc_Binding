@@ -118,8 +118,8 @@ const MolculeView = forwardRef((props, ref) => {
   
 
   return (
-    <div className="Tul">
-      <header className="Tul-header">
+    <>
+      {/* <header className="Tul-header"> */}
         {error && <div className="tul-header-error">Inavlid ProtienIds or Alleles</div>}
         
         
@@ -167,8 +167,8 @@ const MolculeView = forwardRef((props, ref) => {
           </div>
         )}
       
-      </header>
-    </div>
+      
+    </>
   );
 });
 

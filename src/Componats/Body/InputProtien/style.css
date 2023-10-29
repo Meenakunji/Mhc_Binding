@@ -78,7 +78,10 @@
 .input-first{
   margin-bottom: 20px;
  font-family: 'Inter';
+
 }
+
+
 
   
   .input-field label {
@@ -136,9 +139,11 @@ background: #FFF;
     min-width: 350px;
     position: relative;
    font-family: 'Inter';
+
+   /* position: absolute; */
 }
   
-  select {
+ select {
     appearance: none;
     /*  safari  */
     -webkit-appearance: none;
@@ -181,6 +186,49 @@ background: #FFF;
   font-family: 'Inter';
   color: #9B9C9C;
 }
-  
+.input_pro_box_1{
+   overflow-y: auto;
+  /* overflowY: "auto", */
+    height: "300px";
+    position: "absolute";
+    width: "100%";
+    top: "100%";
+    z-index: 9;
+    /* zIndex: "9", */
+    color: "#000";
+    
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 1px 8px 0px rgba(20, 46, 110, 0.10);
+    /* width: 364px; */
+    
+    height: 500px;
+    flex-shrink: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-around; */
+    align-items: center;
+   font-family: 'Inter';
+    
+}
+
+ .input_pro_box_1 li{
+        /* color: "#000",
+        fontSize: "14px",
+        fontWeight: "300",
+        padding: "9px 15px",
+        borderBottom: "1px solid #c3c3c3", */
+    
+    font-size: 0.9rem;
+    /* padding: 0.675em 6em 0.675em 1em; */
+    background-color: #fff;
+    color: #9B9C9C;
+    cursor: pointer;
+   font-family: 'Inter';
+   list-style: none;
+   margin-top: 5px;
+      }
 
   

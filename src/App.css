@@ -17,9 +17,9 @@ body{
 .body_box{
   display: flex;
 
-  align-items: center ;
+  /* align-items: center ; */
   width: 1440px;
-  
+  margin-right: 40px;
   margin-left: 40px;
   font-family: 'Inter';
 }

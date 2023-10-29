@@ -60,10 +60,10 @@ const handleAlignedSeq = (data) => {
       
       </div>
    </div>
-     <div className='footer'>
+     {/* <div className='footer'>
      <LeftFooterCard/>
      <RightFooterCard/>
-     </div>
+     </div> */}
      
   </div>
   </DataContext.Provider>
