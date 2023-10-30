@@ -1,6 +1,6 @@
 
 .Tul{
-    width: 900px;
+    /* width: 900px; */
  font-family: 'Inter';
 }
 .card-3d {
@@ -11,9 +11,11 @@
     cursor: pointer;
     background: #fff;
     padding: 20px;
-    width: 445px;
-    height: 493px;
-  
+    /* width: 445px;
+    height: 493px; */
+   width: 45%;
+   max-height: 554px;
+   /* height: 50%; */
     flex-shrink: 0;
 
     display: flex;
@@ -34,8 +36,11 @@
     background: #fff;
     padding: 20px;
     margin-left: 27px;
-    width: 440px;
-    height: 493px;
+    /* width: 440px;
+    height: 493px; */
+    width: 45%;
+   /* height: 50%; */
+   max-height: 554px;
     
     flex-shrink: 0;
    
@@ -63,6 +68,8 @@
     justify-content: center;
     align-items: center;
  font-family: 'Inter';
+ width: 390px;
+    height: 493px;
 }
 
 .three-d-box{
@@ -70,3 +77,31 @@
   
  font-family: 'Inter';
 }
+
+@media (max-width: 375px) {
+  
+    .three-d-box{
+      flex-direction: column; 
+      width: 100%; 
+      margin-right: 0; 
+      margin-left: 0; 
+    }
+    .d-flex{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    
+    .card-3d{
+        width: 90%;
+    }
+    .card-Protien{
+       width: 90%;
+       margin-left: 0;
+      margin-top: 6px;
+    }
+  
+   
+  }

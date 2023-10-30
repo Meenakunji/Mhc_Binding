@@ -39,4 +39,9 @@
     margin: 10px 0;
    font-family: 'Inter';
 }
+@media (max-width: 375px) {
+  .faq-card{
+    width: 90%;
+  }
+}
   

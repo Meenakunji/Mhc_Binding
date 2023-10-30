@@ -130,7 +130,7 @@ const MolculeView = forwardRef((props, ref) => {
                 
                 
                 
-                <div  className="card-3d">
+                <div  className="card-3d" >
                  
                  
 
