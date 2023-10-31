@@ -66,7 +66,7 @@ const MolculeView = forwardRef((props, ref) => {
 
     return (
       <div
-        style={{ position: "relative", width: "437px", height: "313px" }}
+        style={{ position: "relative", width: '100%', height: "337px" }}
         ref={viewerRef}
       />
     );
